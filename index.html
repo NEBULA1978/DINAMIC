@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Dynamic Cloud Effect</title>    
+    <style type="text/css">
+		body
+		{
+			background-color:#8090e0;
+			font-family: Tahoma,Verdana,Arial,Helvetica;
+			color: #ffffff; 
+		}
+		a{ font-family: Tahoma,Arial,Verdana,Helvetica; color: #ffffff; }
+		a{text-decoration:none}
+		A:hover {color: #ffee88}
+	</style>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/dynamiccloudeffect.js"></script>
+	<script type="text/javascript">
+		$(document).ready(	 
+			function()  
+			{ 
+				$("#container0").dynamiccloudeffect 
+				({ 
+					full_screen:true,
+					background_color:"#7090ef",
+					background_image:"images/bg.jpg",
+					cloud_number:26,
+					speed:6,
+					direction:"L-R"
+				}); 
+				$("#container1").dynamiccloudeffect 
+				({ 
+					full_screen:false,
+					screen_width:600,
+					screen_height:500,					
+					background_color:"#7090ef",
+					cloud_number:26,
+					cloud_size_zoom:2,
+					speed:4,
+					initial_disperse:1.5,
+					direction:"LT-RB"
+				}); 
+				$("#container2").dynamiccloudeffect 
+				({ 
+					full_screen:false,
+					screen_width:600,
+					screen_height:500,					
+					background_color:"#a0c0ff",
+					cloud_number:26,
+					cloud_size_zoom:0.8,
+					cloud_images:"images/black1.png;images/black2.png;images/black3.png",
+					speed:6,
+					initial_x:300,
+					initial_y:400,
+					initial_disperse:1,
+					direction:"L-RT"
+				}); 
+				$("#container3").dynamiccloudeffect 
+				({ 
+					full_screen:false,
+					screen_width:600,
+					screen_height:500,					
+					background_color:"#000000",
+					cloud_number:26,
+					cloud_size_zoom:1.5,
+					cloud_images:"images/purple1.png;images/purple2.png;images/purple3.png",
+					speed:3,
+					initial_x:150,
+					initial_y:-150,
+					initial_disperse:3,
+					direction:"T-RB"
+				}); 
+				$("#container4").dynamiccloudeffect 
+				({ 
+					full_screen:false,
+					screen_width:"100%",
+					screen_height:350,					
+					background_color:"#7090ef",
+					cloud_number:26,
+					cloud_size_zoom:2,
+					speed:8,
+					initial_disperse:1.5,
+					direction:"L-R"
+				}); 
+				
+				var thecontainer=$("#container1");	
+				function getcontainer()
+				{
+					return thecontainer;
+				}	
+					
+				$("#speedp").mousedown(function(E){c=getcontainer();speed=c.attr( "speed")*1+1;c.attr({ "speed":speed});});
+				$("#speedd").mousedown(function(E){c=getcontainer();speed=c.attr( "speed")*1-1;c.attr({ "speed":speed});});
+				$("#lr").mousedown(function(E){c=getcontainer();c.attr({ "direction":"L-R"});});
+				$("#rl").mousedown(function(E){c=getcontainer();c.attr({ "direction":"R-L"});});
+				$("#tb").mousedown(function(E){c=getcontainer();c.attr({ "direction":"T-B"});});
+				$("#bt").mousedown(function(E){c=getcontainer();c.attr({ "direction":"B-T"});});
+				$("#ltrb").mousedown(function(E){c=getcontainer();c.attr({ "direction":"LT-RB"});});
+				$("#lbrt").mousedown(function(E){c=getcontainer();c.attr({ "direction":"LB-RT"});});
+				$("#rtlb").mousedown(function(E){c=getcontainer();c.attr({ "direction":"RT-LB"});});
+				$("#rblt").mousedown(function(E){c=getcontainer();c.attr({ "direction":"RB-LT"});});
+
+				$("#sic1").mousedown(function(E){
+					thecontainer=$("#container1");
+					$("body").css({"background-color":"#555555"});
+					$("#container0").css({"display":"none"});
+					$("#container1").fadeIn();
+					$("#container2").hide();
+					$("#container3").hide();
+					$("#container4").hide();
+				});
+				$("#sic2").mousedown(function(E){
+					thecontainer=$("#container2");
+					$("body").css({"background-color":"#555555"});
+					$("#container0").css({"display":"none"});
+					$("#container1").hide();
+					$("#container2").fadeIn();
+					$("#container3").hide();
+					$("#container4").hide();
+				});
+				$("#sic3").mousedown(function(E){
+					thecontainer=$("#container3");
+					$("body").css({"background-color":"#555555"});
+					$("#container0").css({"display":"none"});
+					$("#container1").hide();
+					$("#container2").hide();
+					$("#container3").fadeIn();
+					$("#container4").hide();
+				});
+				$("#sic4").mousedown(function(E){
+					thecontainer=$("#container4");
+					$("body").css({"background-color":"#555555"});
+					$("#container0").css({"display":"none"});
+					$("#container1").hide();
+					$("#container2").hide();
+					$("#container3").hide();
+					$("#container4").fadeIn();
+				});
+				$("#sif").mousedown(function(E){
+					thecontainer=$("#container0");
+					$("body").css({"background-color":"#8090e0"});
+					$("#container0").css({"display":""});
+					$("#container1").hide();
+					$("#container2").hide();
+					$("#container3").hide();
+					$("#container4").hide();
+				});
+				
+
+				//$("#info").empty();
+				//$("#info").append(thee.attr("id"));
+			} 
+			
+		 
+		); 
+	</script> 
+</head>
+<body>
+<h1 align="center">Dynamic Cloud Effect</h1>
+<div id="container0" style="position: absolute"></div>
+<div id="container4" style="display:none"></div>
+<table  border="0">
+<tr>
+<td valign="top">
+<table border="1" cellspacing="0" width="227">
+  <tr>
+    <td valign="middle" align="center" height="60" width="198"><a href="#" id="sic1">Container Show 1</a></td>
+  </tr>
+  <tr>
+    <td valign="middle" align="center" height="60" width="198"><a href="#" id="sic2">Container Show 2</a></td>
+  </tr>
+  <tr>
+    <td valign="middle" align="center" height="60" width="198"><a href="#" id="sic3">Container Show 3</a></td>
+  </tr>
+  <tr>
+    <td valign="middle" align="center" height="60" width="198"><a href="#" id="sic4">Container Show 4</a></td>
+  </tr>
+  <tr>
+    <td valign="middle" align="center" height="60" width="198"><a href="#" id="sif">Fullscreen Show</a></td>
+  </tr>
+</table>
+</td>
+<td valign="top">
+<div id="did">
+<table border="1" cellspacing="0" width="227">
+  <tr>
+    <td valign="middle" align="center" height="40" width="198"><a href="#" id="speedp"><b>+</b></a> Speed <a href="#" id="speedd"><b>-</b></a></td>
+  </tr>
+  <tr>
+    <td valign="middle" align="center" height="40" width="198"><a href="#" id="lr">Left to Right</a></td>
+  </tr>
+  <tr>
+    <td valign="middle" align="center" height="40" width="198"><a href="#" id="rl">Right to Left</a></td>
+  </tr>
+  <tr>
+    <td valign="middle" align="center" height="40" width="198"><a href="#" id="tb">Top to Bottom</a></td>
+  </tr>
+  <tr>
+    <td valign="middle" align="center" height="40" width="198"><a href="#" id="bt">Bottom to Top</a></td>
+  </tr>
+  <tr>
+    <td valign="middle" align="center" height="40" width="198"><a href="#" id="ltrb">Left Top to Right Bottom</a></td>
+  </tr>
+  <tr>
+    <td valign="middle" align="center" height="40" width="198"><a href="#" id="lbrt">Left Bottom to Right Top</a></td>
+  </tr>
+  <tr>
+    <td valign="middle" align="center" height="40" width="198"><a href="#" id="rtlb">Right Top to Left Bottom</a></td>
+  </tr>
+  <tr>
+    <td valign="middle" align="center" height="40" width="198"><a href="#" id="rblt">Right Bottom to Left Top</a></td>
+  </tr>
+</table>
+<p></p>
+</div>
+</td>
+<td valign="top">
+<div id="container1" style="display:none"><img src="images/plane.png" border="0" /></div>
+<div id="container2" style="display:none"><img src="images/funnel.png" border="0" /></div>
+<div id="container3" style="display:none"></div>
+</td>
+</tr>
+</table>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Documentation</title>
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print" />
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection" />
+    <style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container" style="width: 1299; height: 4030">
+	
+		<h3 class="center alt">&ldquo;Dynamic Cloud Effect&rdquo; Documentation by &ldquo;maxtecb&rdquo; 
+        v1.10</h3>  
+		  
+		<hr>  
+		  
+		<h1 class="center">&ldquo;Dynamic Cloud Effect&rdquo;</h1>  
+		  
+		<div class="borderTop">  
+			<div class="span-6 colborder info prepend-1">  
+				<p class="prepend-top">  
+					<strong>  
+					Created:&nbsp;<br> 
+                    11/8/2012<br> 
+					By: maxtecb<br>             
+					Email: <a href="mailto:youremail@yourdomain.com">maxtecb@hotmail.com</a>             
+					</strong>             
+				</p>             
+			</div><!-- end div .span-6 -->		             
+	             
+			<div class="span-12 last">             
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form              
+                <a href="http://codecanyon.net/user/maxtecb">here</a>. Thanks so much!</p>              
+			</div>              
+		</div><!-- end div .borderTop -->              
+		              
+		<hr>              
+		              
+		<h2 id="toc" class="alt">Table of Contents</h2>              
+		<ol class="alpha">              
+			<li><a href="#A">Overview</a></li>              
+			<li><a href="#B">Included Files &amp; Folders</a></li>              
+			<li><a href="#C">Usage</a></li>              
+			<li><a href="#D">Parameters</a></li>              
+		</ol>              
+		              
+		<hr>              
+		              
+		<h3 id="A"><strong>A) Overview</strong> - <a href="#toc">top</a></h3>              
+        <p>This is a jQuery plugin for dynamic cloud effect. It is simple and compatible with all major browsers and touches devices.</p>             
+              
+		<hr>              
+              
+		<h3 id="B"><strong>B) Included Files &amp; Folders</strong> - <a href="#toc">top</a></h3>              
+              
+		<p>The following files and folders are included in the package:</p>              
+              
+        <ul>             
+          <li> index.html - sample file.&nbsp;<br>            
+            <li>&quot;\help&quot; - this help document.&nbsp;<br></li>            
+ <li>"\js" Folder - contains the javascript files used.&nbsp;<br></li>            
+ <li>"\images" Folder - contains the image files used.&nbsp;<br></li>            
+        </ul>            
+             
+		<hr>             
+		             
+		<h3 id="C"><strong>C) Usage</strong> - <a href="#toc">top</a></h3>             
+		             
+<p>Installing the plugin in your html page requires the following steps.</p>                  
+<ul>                  
+  <li>&nbsp;Including the 2 required javascript files.&nbsp;</li>                 
+  <li>&nbsp;Specifying the html tags of the plugin.&nbsp;</li>                 
+  <li>&nbsp;Instantiating a javascript call with any optional parameters.&nbsp;</li>                 
+</ul>                 
+<p>Look at the the example in the index.html file.<br>                  
+Below describes the steps in more detail.</p>                  
+<p>STEP 1. You will need to include the jquery's library file and the 3d shower's own 3dobjshow.js file. Both files are located inside the js directory:&nbsp;</p>                 
+<div align="center">                 
+  <center>                 
+  <table border="1" width="80%" bgcolor="#C0C0C0" cellspacing="0">                 
+    <tr>                 
+      <td width="100%" align="left">&lt;script type="text/javascript" src="js/jquery.js">&lt;/script><br>                  
+        &lt;script type="text/javascript" src="js/dynamiccloudeffect.js">&lt;/script></td>                  
+    </tr>                  
+  </table>                  
+  </center>                  
+</div>                  
+<p>You can also use the compressed version of the files:</p>                
+<div align="center">                
+  <table border="1" width="80%" bgcolor="#C0C0C0" cellspacing="0">                
+    <tr>                
+      <td width="100%" align="left">&lt;script type="text/javascript" src="js/jquery.min.js">&lt;/script><br>                 
+        &lt;script type="text/javascript" src="js/dynamiccloudeffect.min.js&quot;&gt;&lt;/script></td>                 
+    </tr>                 
+  </table>                 
+</div>                 
+<p>STEP 2. Set up your tags, give them an id or class:&nbsp;</p>                 
+<div align="center">                 
+  <table border="1" width="80%" bgcolor="#C0C0C0" cellspacing="0">                 
+    <tr>                 
+      <td width="100%" align="left">&lt;div id="container">&lt;/div></td>                  
+    </tr>                  
+  </table>                  
+</div>                  
+<p>STEP 3, Call the plugin on $(document).ready():</p>                 
+<div align="center">                 
+  <table border="1" width="80%" bgcolor="#C0C0C0" cellspacing="0">                 
+    <tr>                 
+      <td width="100%" align="left">&lt;script type=&quot;text/javascript&quot;&gt;<br>                 
+        &nbsp; $(document).ready<br>                 
+        &nbsp; (<br>                 
+        &nbsp;&nbsp;&nbsp; function()&nbsp;<br>                 
+        &nbsp;&nbsp;&nbsp; {<br>                 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(&quot;#container&quot;).dynamiccloudeffect&nbsp;<br>                
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ({&nbsp;<br>                 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang="EN-US" style="font-family:Arial">/*                  
+        Parameters */<o:p>                 
+        </o:p>                 
+        </span><br>                 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });&nbsp;<br>                 
+        &nbsp;&nbsp;&nbsp; }&nbsp;<br>                 
+        &nbsp; );&nbsp;<br>                 
+	&lt;/script>&nbsp;<br>                 
+      </td>                 
+    </tr>                 
+  </table>                 
+</div>                 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  
+or call the plugin after the tag:</p>                  
+<div align="center">                 
+  <table border="1" width="80%" bgcolor="#C0C0C0" cellspacing="0">                 
+    <tr>                 
+      <td width="100%" align="left"><font color="#666666">&lt;div id="container">&lt;/div><br>                  
+        .....</font><br>                 
+        &lt;script type=&quot;text/javascript&quot;&gt;<br>                 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(&quot;#container&quot;).dynamiccloudeffect<br>                
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ({&nbsp;<br>                
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span lang="EN-US" style="font-family:Arial">/*                  
+        Parameters */<o:p>                 
+        </o:p>                 
+        </span><br>                 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				});&nbsp;<br>                 
+	&lt;/script>&nbsp;</td>                 
+    </tr>                 
+  </table>                 
+</div>                 
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>                 
+<p><br>                 
+</p>                 
+           
+		            
+		<hr>             
+		             
+		<h3 id="D"><strong>D) Parameters</strong> - <a href="#toc">top</a></h3>             
+		             
+<p>You can change some common attributes of the effect through the parameters of the plugin. If you want to leave a parameter as is with its default value, you can omit that parameter in the javascript call.<br>                 
+Below is an example of the attributes being specified with corresponding values.</p>                 
+<div align="center">                
+  <table border="1" width="80%" bgcolor="#C0C0C0" cellspacing="0">                
+    <tr>                
+      <td width="100%" align="left">&lt;script type=&quot;text/javascript&quot;&gt;<br>                
+        &nbsp; $(document).ready<br>                
+        &nbsp; (<br>                
+        &nbsp;&nbsp;&nbsp;			function()&nbsp;<br>                
+        &nbsp;&nbsp;&nbsp;			{<br>                 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(&quot;#container1&quot;).dynamiccloudeffect<br>               
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ({&nbsp;<br>               
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        full_screen:true,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        background_color:&quot;#7090ef&quot;,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        background_image:&quot;images/bg.jpg&quot;,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        cloud_number:26,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        speed:6,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        direction:&quot;L-R&quot;<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; });&nbsp;<br>               
+        &nbsp;&nbsp;&nbsp;			}&nbsp;<br>                
+        &nbsp;		);&nbsp;<br>                
+	&lt;/script>&nbsp;<br>                
+      </td>                
+    </tr>                
+  </table>                
+</div>                
+<p>Another example:</p>                 
+<div align="center">                
+  <table border="1" width="80%" bgcolor="#C0C0C0" cellspacing="0">                
+    <tr>                
+      <td width="100%" align="left">&lt;script type=&quot;text/javascript&quot;&gt;<br>                
+        &nbsp; $(document).ready<br>                
+        &nbsp; (<br>                
+        &nbsp;&nbsp;&nbsp;			function()&nbsp;<br>                
+        &nbsp;&nbsp;&nbsp;			{<br>                 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(&quot;#container1&quot;).dynamiccloudeffect<br>               
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ({&nbsp;<br>               
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        full_screen:false,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        screen_width:600,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        screen_height:500,&nbsp;<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        background_color:&quot;#000000&quot;,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        cloud_number:26,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        cloud_size_zoom:1.5,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        cloud_images:&quot;images/purple1.png;images/purple2.png;images/purple3.png&quot;,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        speed:3,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        initial_x:150,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        initial_y:-150,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        initial_disperse:3,<br>     
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        direction:&quot;T-RB&quot;<br>     
+        &nbsp;&nbsp;&nbsp; });&nbsp;<br>               
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $(&quot;#container2&quot;).dynamiccloudeffect<br>              
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ({&nbsp;<br>               
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+        full_screen:false,<br>    
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+        screen_width:&quot;100%&quot;,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+        //<span>pay attention to</span> <span class="ecxhps">the quotation marks</span><br>   
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+        screen_height:350,&nbsp;<br>    
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+        background_color:&quot;#000000&quot;,<br>    
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+        cloud_number:20,<br>    
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+        cloud_size_zoom:2,<br>    
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+        speed:8,<br>    
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+        initial_disperse:1.5,<br>    
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      
+        direction:&quot;L-R&quot;<br>    
+        &nbsp;&nbsp;&nbsp; });&nbsp;<br>               
+        &nbsp;&nbsp;&nbsp; }&nbsp;<br>               
+        &nbsp;		);&nbsp;<br>                
+	&lt;/script>&nbsp;<br>                
+      </td>                
+    </tr>                
+  </table>                
+</div>                
+<p>parameters List Table:</p>                 
+<table border="1" width="90%" bordercolorlight="#000000" cellspacing="0" bordercolordark="#C0C0C0">                
+  <tr>                
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" bgcolor="#C0C0C0" align="center">Parameter</td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" bgcolor="#C0C0C0" align="center">	Default</td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" bgcolor="#C0C0C0" align="center">	Type</td>               
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" bgcolor="#C0C0C0" align="center">	Description</td>               
+  </tr>               
+  <tr>               
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">screen_width&nbsp;</font></td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">	600&nbsp;</font></td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">	Integer&nbsp;<br>  
+      or String</font></td>              
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">	The width of the main container's      
+      window<br>    
+      or <span class="hps">the </span> width<span class="hps"> percentage of</span>  
+      the width</font></td>                
+  </tr>                
+  <tr>                
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">screen_height&nbsp;</font></td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left"><font size="2">	600&nbsp;</font></td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">	Integer&nbsp;<br>  
+      or String</font></td>              
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left"><font size="2">	The height of the main container's      
+      window<br>  
+      or <span class="hps">the </span> height<span class="hps"> percentage of</span>  
+      the width</font></td>                
+  </tr>                
+  <tr>                
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">background_color&nbsp;</font></td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">	"#000000"</font></td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">	Color&nbsp;</font></td>               
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">	The color of the      
+      background</font></td>                
+  </tr>                
+  <tr>                
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">background_image&nbsp;</font></td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left"><font size="2">	none</font></td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">	String&nbsp;</font></td>               
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left"><font size="2">	The url of the of the      
+      background</font></td>                
+  </tr>                
+  <tr>                
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">full_screen</font></td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">false</font></td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">Boolean&nbsp;</font></td>               
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">Show      
+      the effect at f</font><font size="2">ull screen or not</font></td>                
+  </tr>                
+  <tr>                
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">cloud_number</font><font size="2">&nbsp;</font></td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left"><font size="2">26</font></td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">	Integer&nbsp;</font></td>               
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left"><font size="2">The      
+      number of clouds in one plugin. The minimum is 8 and The maximum is 36</font></td>                
+  </tr>                
+  <tr>     
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">cloud_size_zoom&nbsp;</font></td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">1.0&nbsp;</font></td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">Real&nbsp;</font></td>               
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">The      
+      multiple of the zoom cloud size</font></td>                
+  </tr>     
+  <tr>     
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">speed&nbsp;</font></td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left"><font size="2">	6&nbsp;</font></td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">Real&nbsp;</font></td>               
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left"><font size="2">	<span>The</span>      
+      <span class="hps">speed</span> <span class="hps">of</span> <span class="hps">the      
+      movement of clouds</span></font></td>                
+  </tr>     
+  <tr>     
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">direction</font></td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">"L-R"&nbsp;</font></td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">String&nbsp;</font></td>               
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2"><span>The</span>      
+      <span class="hps">direction</span> <span class="hps">of</span> <span class="hps">the      
+      movement of clouds<br>     
+      &quot;L-R&quot;: left to right<br>     
+      &quot;R-L&quot;: right to left<br>     
+      &quot;T-B&quot;: top to bottom<br>     
+      &quot;B-T&quot;: bottom to top<br>     
+      &quot;TL-BR&quot;: top left to bottom right<br>     
+      &quot;BL-TR&quot;: bottom left to top right<br>     
+      &quot;BR-TL&quot;: bottom right to top left<br>     
+      &quot;TR-BL&quot;: top right to bottom left&nbsp;</span></font></td>                
+  </tr>     
+  <tr>     
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">initial_x&nbsp;</font></td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left"><font size="2">-1&nbsp;</font></td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">Integer&nbsp;</font></td>               
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left"><font size="2">	The      
+      x coordinates of the initial position of <span class="hps">clouds</span></font></td>                
+  </tr>     
+  <tr>     
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">initial_y</font></td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">-1&nbsp;</font></td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">Integer&nbsp;</font></td>               
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">The      
+      y coordinates of the initial position of <span class="hps">clouds</span></font></td>                
+  </tr>     
+  <tr>     
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">initial_disperse</font></td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left"><font size="2">&nbsp;1</font></td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">Real</font></td>               
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left"><font size="2">The      
+      </font><font size="2">disperse of the clouds at initial position</font></td>                
+  </tr>     
+  <tr>                
+    <td width="23%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">cloud_images</font></td>               
+    <td width="18%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">&quot;&quot;</font></td>               
+    <td width="10%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#E8E8E8"><font size="2">String</font></td>               
+    <td width="49%" bordercolorlight="#C0C0C0" bordercolordark="#000000" valign="top" align="left" bgcolor="#F6F6F6"><font size="2">The url(src) of the      
+      cloud pictures. Each picture spare by ;<br>     
+      The string like:<br>     
+      "images/purple1.png;images/purple2.png;images/purple3.png"<br>     
+      Omitting the parameter is equal to setting the parameter to<br>     
+      &quot;images/cloud1.png;images/cloud2.png;images/cloud3.png&quot;</font></td>                
+  </tr>                
+</table>                
+<p>　</p>      
+	</div>           
+</body>           
